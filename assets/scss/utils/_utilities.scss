@@ -1,0 +1,39 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    // custom
+    "object-fit":
+      (
+        property: object-fit,
+        class: o-f,
+        values: contain cover,
+      ),
+    "width": (
+      property: width,
+      responsive: true,
+      // custom
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+      ),
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      responsive: true,
+      class: fs,
+      values: $font-sizes,
+    )
+  )
+);
+
+.container-fluid {
+  max-width: 1320px;
+}
+.tc-sans {
+  font-family: "Noto Sans TC", sans-serif;
+}

@@ -1,4 +1,10 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo-img {
+  width: 53px;
+  height: 53px;
+}
+.header {
+  &-search {
+    width: 355px;
+    height: 53px;
+  }
 }
