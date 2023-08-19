@@ -6,5 +6,13 @@
   &-search {
     width: 355px;
     height: 53px;
+    @include media-breakpoint-down(md) {
+      width: 207px;
+    }
+  }
+}
+.nav-link {
+  &-hover {
+    color: #9c9e18 !important;
   }
 }

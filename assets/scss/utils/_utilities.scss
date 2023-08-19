@@ -27,13 +27,18 @@ $utilities: map-merge(
       responsive: true,
       class: fs,
       values: $font-sizes,
+    ),
+    "row-gap": (
+      rfs: true,
+      property: row-gap,
+      responsive: true,
+      class: r-gap,
+      values: (
+        2: 8px,
+        6: 24px,
+        10: 40px,
+        12: 48px,
+      ),
     )
   )
 );
-
-.container-fluid {
-  max-width: 1320px;
-}
-.tc-sans {
-  font-family: "Noto Sans TC", sans-serif;
-}

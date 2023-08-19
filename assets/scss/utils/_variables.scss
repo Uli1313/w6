@@ -394,7 +394,7 @@ $spacers: (
   10: $spacer * 2.5,
   11: $spacer * 2.75,
   12: $spacer * 3,
-  15: $spacer * 4
+  15: $spacer * 3.75
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -552,10 +552,10 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Yeseva One", "Noto Serif TC", system-ui, -apple-system,
-  "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
-  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-  "Noto Color Emoji" !default; // custom 前面加上 "Yeseva One", "Noto Serif TC"。Noto Sans TC 是另外寫 class
+$font-family-sans-serif: "Yeseva One", "Noto Serif TC", "Noto Sans TC",
+  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji" !default; // custom 前面加上 "Yeseva One", "Noto Serif TC", "Noto Sans TC",
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
@@ -589,6 +589,8 @@ $h4-font-size: 32px; // custom $font-size-base * 1.5 !default;
 $h5-font-size: 24px; // custom $font-size-base * 1.25 !default;
 $h6-font-size: 18px; // custom $font-size-base !default;
 $h7-font-size: 16px; // custom
+$h8-font-size: 20px; // custom
+$h9-font-size: 14px; // custom
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -600,6 +602,8 @@ $font-sizes: (
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -737,7 +741,7 @@ $input-btn-font-family: null !default;
 $input-btn-font-size: $font-size-base !default;
 $input-btn-line-height: $line-height-base !default;
 
-$input-btn-focus-width: 0.25rem !default;
+$input-btn-focus-width: 0; // custom 0.25rem !default; 修改 focus 狀態下所有元素的 box-shadow
 $input-btn-focus-color-opacity: 0.25 !default;
 $input-btn-focus-color: rgba(
   $component-active-bg,
@@ -763,7 +767,7 @@ $input-btn-border-width: $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-$btn-padding-y: $input-btn-padding-y !default;
+$btn-padding-y: 8px; // custom $input-btn-padding-y !default;
 $btn-padding-x: $input-btn-padding-x !default;
 $btn-font-family: $input-btn-font-family !default;
 $btn-font-size: $input-btn-font-size !default;
@@ -1142,8 +1146,8 @@ $navbar-toggler-border-radius: $btn-border-radius !default;
 $navbar-toggler-focus-width: $btn-focus-width !default;
 $navbar-toggler-transition: box-shadow 0.15s ease-in-out !default;
 
-$navbar-light-color: rgba($black, 0.55) !default;
-$navbar-light-hover-color: rgba($black, 0.7) !default;
+$navbar-light-color: $primary; // custom  rgba($black, 0.55) !default;
+$navbar-light-hover-color: #9c9e18; // custom  rgba($black, 0.7) !default;
 $navbar-light-active-color: rgba($black, 0.9) !default;
 $navbar-light-disabled-color: rgba($black, 0.3) !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
@@ -1424,10 +1428,10 @@ $toast-header-border-color: rgba($black, 0.05) !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size: 0.75em !default;
+$badge-font-size: 16px; // custom 0.75em !default;
 $badge-font-weight: $font-weight-bold !default;
-$badge-color: $white !default;
-$badge-padding-y: 0.35em !default;
+$badge-color: $primary; // custom $white !default;
+$badge-padding-y: 3px; // custom 0.35em !default;
 $badge-padding-x: 0.65em !default;
 $badge-border-radius: $border-radius !default;
 // scss-docs-end badge-variables

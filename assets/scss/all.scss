@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap");
 // TC-font-text
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+// google icon 載入「開賣中」的箭頭符號
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 // icon
 @import "../icofont/icofont.min.css";
@@ -35,13 +37,23 @@
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/nav";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/badge";
 // @import "bootstrap";
+
+// bootstrap else
+@import "bootstrap/scss/transitions.scss";
 
 // custom components
 @import "./components/buttons";
+@import "./components/card";
+@import "./components/badge";
 
 // bootstrap api
 @import "bootstrap/scss/utilities/api";
+
+// custom-utilities
+@import "./utils/custom.utilities";
 
 // base
 @import "./base";

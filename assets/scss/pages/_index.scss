@@ -1,3 +1,92 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  height: 518px;
+  &-title {
+    letter-spacing: 2px;
+  }
+  &-time {
+    top: 48px;
+    left: 48px;
+  }
+  &-desc {
+    bottom: 24px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 350px;
+    &-time {
+      top: 16px;
+      left: 40px;
+    }
+  }
+}
+.explore {
+  &-img {
+    width: 80px;
+    height: 80px;
+  }
+  &-item {
+    &:hover {
+      background: $secondary;
+    }
+    &-more {
+      transition: transform 0.3s;
+      &:hover {
+        transform: rotate(2deg);
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &-img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.online {
+  &-img {
+    height: 317px;
+    object-position: 50% 33%;
+  }
+  @include media-breakpoint-down(md) {
+    &-img {
+      height: 158px;
+    }
+  }
+}
+.swiper {
+  &-wrapper {
+    transition-timing-function: linear;
+  }
+  &-slide {
+    letter-spacing: 3.2px;
+    width: auto;
+  }
+}
+.album {
+  &:nth-child(2n) {
+    transform: rotate(2deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(-2deg);
+  }
+  &-tag {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+  &-img {
+    height: 274px;
+  }
+  &:hover {
+    .album-tag {
+      background: $secondary !important;
+    }
+  }
+}
+.subscribe {
+  @include media-breakpoint-down(md) {
+    &-title {
+      border-left: 2px solid !important;
+    }
+    &-desc {
+      border-left: 2px solid !important;
+    }
+  }
 }
