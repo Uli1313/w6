@@ -39,6 +39,7 @@
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/dropdown";
 @import "bootstrap/scss/badge";
+@import "bootstrap/scss/tables";
 // @import "bootstrap";
 
 // bootstrap else
@@ -64,3 +65,4 @@
 
 // pages
 @import "./pages/index";
+@import "./pages/details";

@@ -25,20 +25,23 @@ $utilities: map-merge(
       rfs: true,
       property: font-size,
       responsive: true,
+      // custom
       class: fs,
       values: $font-sizes,
     ),
-    "row-gap": (
-      rfs: true,
-      property: row-gap,
-      responsive: true,
-      class: r-gap,
-      values: (
-        2: 8px,
-        6: 24px,
-        10: 40px,
-        12: 48px,
-      ),
-    )
+    // custom
+    "row-gap":
+      (
+        rfs: true,
+        property: row-gap,
+        responsive: true,
+        class: r-gap,
+        values: (
+          2: 8px,
+          6: 24px,
+          10: 40px,
+          12: 48px,
+        ),
+      )
   )
 );

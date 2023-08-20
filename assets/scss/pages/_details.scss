@@ -1,0 +1,58 @@
+.details {
+  &-img {
+    height: 550px;
+  }
+  &-date {
+    height: 455px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(30deg);
+      width: 2px;
+      height: 100px;
+      background: $primary;
+    }
+  }
+  &-ticket {
+    &-date,
+    &-type,
+    &-price {
+      width: 30%;
+    }
+    &-buy {
+      width: 10%;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &-date {
+      height: 100%;
+      &::before {
+        height: 50px;
+      }
+    }
+    &-ticket {
+      &-date {
+        width: calc(100% / 12 * 2.6);
+      }
+      &-type {
+        width: calc(100% / 12 * 5.4);
+      }
+      &-buy,
+      &-price {
+        width: calc(100% / 12 * 2);
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &-img {
+      height: 180px;
+    }
+    &-ticket {
+      &-buy-button {
+        --bs-border-width: 1px;
+      }
+    }
+  }
+}

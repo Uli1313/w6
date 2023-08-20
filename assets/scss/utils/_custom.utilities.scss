@@ -4,6 +4,9 @@
 .tc-sans {
   font-family: "Noto Sans TC", sans-serif;
 }
+.tc-serif {
+  font-family: "Noto Serif TC", sans-serif;
+}
 .lh-150 {
   line-height: 1.5;
 }
@@ -19,4 +22,16 @@
     padding-top: 38px !important;
     padding-bottom: 38px !important;
   }
+}
+.ls-2 {
+  letter-spacing: 2px;
+}
+.bg-gray {
+  background: #ebeae8;
+}
+.w-30 {
+  width: 30%;
+}
+.w-10 {
+  width: 10%;
 }

@@ -591,6 +591,7 @@ $h6-font-size: 18px; // custom $font-size-base !default;
 $h7-font-size: 16px; // custom
 $h8-font-size: 20px; // custom
 $h9-font-size: 14px; // custom
+$h10-font-size: 22px; // custom
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -604,6 +605,7 @@ $font-sizes: (
   7: $h7-font-size,
   8: $h8-font-size,
   9: $h9-font-size,
+  10: $h10-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
