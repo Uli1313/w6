@@ -9,8 +9,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <title>7TAO 活動訂票網</title>
-    <script type="module" crossorigin src="/w6/assets/main-357bec42.js"></script>
-    <link rel="stylesheet" href="/w6/assets/main-1fc8caa5.css">
+    <script type="module" crossorigin src="/w6/assets/main-48e6ca1e.js"></script>
+    <link rel="stylesheet" href="/w6/assets/main-3cdc264e.css">
   </head>
   <body>
     <nav
@@ -214,7 +214,11 @@
                   />
                   <a href="##" class="card-tag-link">社群活動</a>
                 </div>
-                <a href="details.html" class="card-gopage"
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  class="card-gopage"
                   >開賣中<span class="material-icons card-gopage-icon">
                     keyboard_double_arrow_right
                   </span></a
@@ -246,7 +250,11 @@
                   />
                   <a href="##" class="card-tag-link">演出</a>
                 </div>
-                <a href="details.html" class="card-gopage"
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  class="card-gopage"
                   >檢視活動<span class="material-icons card-gopage-icon">
                     keyboard_double_arrow_right
                   </span></a
@@ -278,7 +286,11 @@
                   />
                   <a href="##" class="card-tag-link">聯誼</a>
                 </div>
-                <a href="details.html" class="card-gopage"
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  class="card-gopage"
                   >開賣中<span class="material-icons card-gopage-icon">
                     keyboard_double_arrow_right
                   </span></a
@@ -310,7 +322,11 @@
                   />
                   <a href="##" class="card-tag-link">遊戲競賽</a>
                 </div>
-                <a href="details.html" class="card-gopage"
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  class="card-gopage"
                   >開賣中<span class="material-icons card-gopage-icon">
                     keyboard_double_arrow_right
                   </span></a
@@ -342,7 +358,11 @@
                   />
                   <a href="##" class="card-tag-link">社群活動</a>
                 </div>
-                <a href="details.html" class="card-gopage"
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  class="card-gopage"
                   >開賣中<span class="material-icons card-gopage-icon">
                     keyboard_double_arrow_right
                   </span></a
@@ -374,7 +394,11 @@
                   />
                   <a href="##" class="card-tag-link">展覽</a>
                 </div>
-                <a href="details.html" class="card-gopage"
+                <a
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#registerModal"
+                  class="card-gopage"
                   >開賣中<span class="material-icons card-gopage-icon">
                     keyboard_double_arrow_right
                   </span></a
@@ -614,6 +638,42 @@
         <p class="fs-9 fs-md-6 fw-bold">——我也不知道誰說的</p>
       </div>
     </main>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg text-center tc-sans"
+      >
+        <div class="modal-content">
+          <div class="modal-header position-relative">
+            <h5 class="modal-title mx-auto tc-serif" id="registerModalLabel">
+              立刻成為7TAO會員
+            </h5>
+            <button
+              type="button"
+              class="btn-close m-0 position-absolute end-0 translate-middle-x"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-8 py-md-12">
+            <p class="mb-6">
+              立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br />
+              您也可以先報名活動，日後再註冊帳號，<br />
+              系統會在認證您的Email後，協助您找回舊的訂單。
+            </p>
+            <button type="button" class="btn btn-primary fs-8 px-8">
+              立即成為會員
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="py-6 py-md-8 fs-9 fs-md-7 border-top border-3 text-center">
   <p>© 7TAO七逃. All Rights Reserved</p>
 </footer>
