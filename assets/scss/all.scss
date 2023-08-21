@@ -33,17 +33,14 @@
 
 // bootstrap components
 @import "bootstrap/scss/modal";
+@import "bootstrap/scss/close";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/nav";
-@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/transitions.scss";
 @import "bootstrap/scss/badge";
 @import "bootstrap/scss/tables";
-// @import "bootstrap";
-
-// bootstrap else
-@import "bootstrap/scss/transitions.scss";
 
 // custom components
 @import "./components/buttons";

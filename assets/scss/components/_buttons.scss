@@ -4,6 +4,9 @@
 }
 .btn-primary {
   border: none;
+}
+.btn-primary,
+.btn-outline-primary {
   &:hover {
     color: $secondary;
   }
