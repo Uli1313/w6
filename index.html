@@ -8,9 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>7TAO 活動訂票網</title>
-    <script type="module" crossorigin src="/w6/assets/main-48e6ca1e.js"></script>
-    <link rel="stylesheet" href="/w6/assets/main-3cdc264e.css">
+    <script type="module" crossorigin src="/w6/assets/main-c354c83b.js"></script>
+    <link rel="stylesheet" href="/w6/assets/main-bc81f35b.css">
   </head>
   <body>
     <nav
@@ -30,7 +31,7 @@
       >
       <form class="d-flex header-search">
         <input
-          class="form-control tc-sans border border-2 py-4 px-6"
+          class="form-control tc-sans border border-2 py-2 py-md-4 px-3 px-md-6"
           type="search"
           placeholder="探索活動"
           aria-label="Search"
@@ -82,7 +83,11 @@
             alt="草東沒有派對"
             class="w-100 h-100 o-f-cover"
           />
-          <p class="banner-time fs-4 fs-lg-2 position-absolute">
+          <p
+            class="banner-time fs-4 fs-lg-2 position-absolute"
+            data-aos="zoom-out"
+            data-aos-delay="200"
+          >
             19 MAY<br class="d-lg-none" />
             2023
           </p>
@@ -91,10 +96,16 @@
           >
             <h2
               class="banner-title text-nowrap mb-0 mb-md-4 fs-6 fs-lg-5 fw-bold"
+              data-aos="zoom-out"
+              data-aos-delay="300"
             >
               隔牆有耳-沒有草東的派對
             </h2>
-            <p class="tc-sans text-nowrap d-none d-lg-block">
+            <p
+              class="tc-sans text-nowrap d-none d-lg-block"
+              data-aos="zoom-out"
+              data-aos-delay="400"
+            >
               你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br />
               帶上啤酒、野餐墊，讓我們在Live
               House外面一起開場「沒有草東的派對」吧！
@@ -105,7 +116,7 @@
         <ul
           class="row row-cols-3 row-cols-md-4 row-cols-lg-6 justify-content-center r-gap-2 gx-2 gx-md-4 mb-8 mb-md-12"
         >
-          <li class="col text-center">
+          <li class="col text-center" data-aos="zoom-in">
             <div
               class="explore-item py-5 py-md-35 border border-2 position-relative"
             >
@@ -118,7 +129,7 @@
               <a href="##" class="stretched-link d-block"></a>
             </div>
           </li>
-          <li class="col text-center">
+          <li class="col text-center" data-aos="zoom-in" data-aos-delay="100">
             <div
               class="explore-item py-5 py-md-35 border border-2 position-relative"
             >
@@ -131,7 +142,7 @@
               <a href="##" class="stretched-link d-block"></a>
             </div>
           </li>
-          <li class="col text-center">
+          <li class="col text-center" data-aos="zoom-in" data-aos-delay="200">
             <div
               class="explore-item py-5 py-md-35 border border-2 position-relative"
             >
@@ -144,7 +155,7 @@
               <a href="##" class="stretched-link d-block"></a>
             </div>
           </li>
-          <li class="col text-center">
+          <li class="col text-center" data-aos="zoom-in" data-aos-delay="300">
             <div
               class="explore-item py-5 py-md-35 border border-2 position-relative"
             >
@@ -157,7 +168,7 @@
               <a href="##" class="stretched-link d-block"></a>
             </div>
           </li>
-          <li class="col text-center">
+          <li class="col text-center" data-aos="zoom-in" data-aos-delay="400">
             <div
               class="explore-item py-5 py-md-35 border border-2 position-relative"
             >
@@ -170,7 +181,7 @@
               <a href="##" class="stretched-link d-block"></a>
             </div>
           </li>
-          <li class="col text-center">
+          <li class="col text-center" data-aos="zoom-in" data-aos-delay="500">
             <div
               class="explore-item-more h-100 d-flex flex-column justify-content-center border border-2 position-relative bg-primary text-secondary"
             >
@@ -182,12 +193,14 @@
         <!-- recent -->
         <div
           class="d-flex justify-content-between align-items-center border border-3 py-4 py-md-6 px-3 px-md-8 mb-6 mb-md-8"
+          data-aos="fade-up"
         >
           <h3 class="fs-5 fs-md-1">RECENT</h3>
           <h3 class="fs-7 fs-md-4 fw-bold">近期活動</h3>
         </div>
         <ul
           class="row row-cols-1 row-cols-md-2 row-cols-lg-3 r-gap-6 r-gap-md-12 mb-8 mb-lg-15"
+          data-aos="zoom-in"
         >
           <li>
             <div class="card">
@@ -410,19 +423,20 @@
         <!-- online -->
         <div
           class="d-flex justify-content-between align-items-center border border-3 py-4 py-md-6 px-3 px-md-8 mb-6 mb-md-8"
+          data-aos="fade-up"
         >
           <h3 class="fs-5 fs-md-1">ONLINE</h3>
           <h3 class="fs-7 fs-md-4 fw-bold">線上活動</h3>
         </div>
-        <div class="row mb-8 mb-lg-15">
-          <div class="col-md-7">
+        <div class="row mb-8 mb-lg-15 overflow-hidden">
+          <div class="col-md-7" data-aos="zoom-in">
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true"
               alt="ChatGPT"
               class="online-img w-100 o-f-cover mb-4 mb-md-0"
             />
           </div>
-          <div class="col-md-5 d-flex flex-column">
+          <div class="col-md-5 d-flex flex-column" data-aos="fade-left">
             <h3 class="fs-6 fs-md-4 fw-bold mb-2 mb-lg-4">切特居批踢</h3>
             <div class="d-flex gap-2 mb-3 mb-md-8">
               <span class="badge">競賽</span>
@@ -468,7 +482,7 @@
       <!-- album -->
       <div class="container-fluid py-12 py-md-15 overflow-hidden">
         <ul class="row justify-content-center r-gap-10">
-          <li class="album col-10 col-md-6 col-lg-3">
+          <li class="album col-10 col-md-6 col-lg-3" data-aos="zoom-in">
             <div class="border border-2 p-3 p-md-4 position-relative">
               <a href="##" class="stretched-link d-block"></a>
               <h3
@@ -484,7 +498,11 @@
               <h4 class="fs-6 mb-8">無聲派對-閉閉嘴dancing</h4>
             </div>
           </li>
-          <li class="album col-10 col-md-6 col-lg-3">
+          <li
+            class="album col-10 col-md-6 col-lg-3"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <div class="border border-2 p-3 p-md-4 position-relative">
               <h3
                 class="album-tag position-absolute fs-7 px-4 py-2 bg-white top-0 start-50"
@@ -500,7 +518,11 @@
             </div>
             <a href="##" class="stretched-link d-block"></a>
           </li>
-          <li class="album col-10 col-md-6 col-lg-3">
+          <li
+            class="album col-10 col-md-6 col-lg-3"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <div class="border border-2 p-3 p-md-4 position-relative">
               <h3
                 class="album-tag position-absolute fs-7 px-4 py-2 bg-white top-0 start-50"
@@ -516,7 +538,11 @@
             </div>
             <a href="##" class="stretched-link d-block"></a>
           </li>
-          <li class="album col-10 col-md-6 col-lg-3">
+          <li
+            class="album col-10 col-md-6 col-lg-3"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <div class="border border-2 p-3 p-md-4 position-relative">
               <h3
                 class="album-tag position-absolute fs-7 px-4 py-2 bg-white top-0 start-50"
@@ -555,7 +581,7 @@
         </div>
       </div>
       <!-- call to action -->
-      <div class="container-fluid mb-12 mb-lg-15">
+      <div class="container-fluid mb-12 mb-lg-15" data-aos="fade-up">
         <div class="row row-cols-1 row-cols-md-2 gx-0">
           <div class="col mb-6 mb-md-0">
             <h5 class="fs-5 fs-md-4 border border-2 py-4 px-3 px-md-8">
@@ -632,10 +658,12 @@
         </div>
       </div>
       <div class="border-top border-3 py-12 py-lg-15 text-center">
-        <h3 class="fs-6 fs-md-4 fw-bold mb-3 mb-md-4">
+        <h3 class="fs-6 fs-md-4 fw-bold mb-3 mb-md-4" data-aos="zoom-in">
           此刻打盹，你將做夢；此刻學習，你將圓夢
         </h3>
-        <p class="fs-9 fs-md-6 fw-bold">——我也不知道誰說的</p>
+        <p class="fs-9 fs-md-6 fw-bold" data-aos="zoom-in" data-aos-delay="200">
+          ——我也不知道誰說的
+        </p>
       </div>
     </main>
     <!-- modal -->
@@ -705,5 +733,28 @@
       });
     </script>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // 離底部距離 120px 才出現 建議 120-200 offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // 建議不要超過1秒 values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // false:往回拉會收回去 true:只出現一次 whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>

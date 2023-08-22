@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>返老還童-制服聯誼 | 7TAO 活動訂票網</title>
-    <script type="module" crossorigin src="/w6/assets/main-48e6ca1e.js"></script>
-    <link rel="stylesheet" href="/w6/assets/main-3cdc264e.css">
+    <script type="module" crossorigin src="/w6/assets/main-c354c83b.js"></script>
+    <link rel="stylesheet" href="/w6/assets/main-bc81f35b.css">
   </head>
   <body>
     <nav
@@ -26,7 +27,7 @@
       >
       <form class="d-flex header-search">
         <input
-          class="form-control tc-sans border border-2 py-4 px-6"
+          class="form-control tc-sans border border-2 py-2 py-md-4 px-3 px-md-6"
           type="search"
           placeholder="探索活動"
           aria-label="Search"
@@ -72,7 +73,7 @@
     <main>
       <div class="container-fluid">
         <!-- details-date -->
-        <div class="row mb-6">
+        <div class="row mb-6" data-aos="zoom-in">
           <div class="col-lg-10 mb-2 mb-lg-0">
             <div class="border border-3 p-3 p-md-6">
               <img
@@ -84,16 +85,18 @@
           </div>
           <div class="col-lg-2">
             <div
-              class="row gx-2 text-center h-100 flex-row flex-lg-column justify-content-between"
+              class="row gx-2 text-center flex-row flex-lg-column justify-content-between"
             >
-              <div class="col-4 col-lg-12">
+              <div class="col-4 col-lg-12 mb-6">
                 <h3 class="border border-3 py-6 py-lg-8 fs-5 fs-lg-3">2023</h3>
               </div>
               <div class="col-8 col-lg-12">
                 <div
-                  class="details-date border border-3 px-6 px-lg-0 py-lg-12 d-flex flex-lg-column align-items-center justify-content-between position-relative lh-120"
+                  class="details-time border border-3 px-6 px-lg-0 py-lg-10 d-flex flex-lg-column align-items-center justify-content-between position-relative lh-120"
                 >
-                  <div class="fs-10 fs-lg-3 d-flex flex-column gap-1">
+                  <div
+                    class="details-time-date fs-10 fs-lg-3 d-flex flex-column gap-1"
+                  >
                     <p>MAY</p>
                     <p>19</p>
                   </div>
@@ -109,19 +112,30 @@
         </div>
         <!-- details-title -->
         <div class="mb-6 mb-md-12">
-          <h2 class="fs-4 fs-md-2 mb-2 mb-md-4 ls-2">返老還童-制服聯誼</h2>
-          <p class="fs-md-10 tc-sans mb-0 mb-lg-6">
+          <h2 class="fs-4 fs-md-2 mb-2 mb-md-4 ls-2" data-aos="fade-up">
+            返老還童-制服聯誼
+          </h2>
+          <p class="fs-md-10 tc-sans mb-0 mb-lg-6" data-aos="fade-up">
             穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！
           </p>
           <div class="d-none d-md-flex gap-2">
-            <span class="badge">聯誼</span>
-            <span class="badge">美食</span>
-            <span class="badge">戶外</span>
-            <span class="badge">交通旅遊</span>
+            <span class="badge" data-aos="zoom-in">聯誼</span>
+            <span class="badge" data-aos="zoom-in" data-aos-delay="100"
+              >美食</span
+            >
+            <span class="badge" data-aos="zoom-in" data-aos-delay="200"
+              >戶外</span
+            >
+            <span class="badge" data-aos="zoom-in" data-aos-delay="300"
+              >交通旅遊</span
+            >
           </div>
         </div>
         <!-- details-desc -->
-        <div class="border border-3 p-4 p-md-8 mb-6 mb-md-12 tc-sans bg-gray">
+        <div
+          class="border border-3 p-4 p-md-8 mb-6 mb-md-12 tc-sans bg-gray"
+          data-aos="fade-up"
+        >
           <p class="mb-4">想回到過去？試著讓故事繼續？</p>
           <p class="mb-4">
             由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！
@@ -132,35 +146,39 @@
         </div>
         <!-- details-ticket -->
         <div
-          class="d-flex justify-content-between align-items-center border border-3 py-4 py-md-6 px-3 px-md-8 mb-6 mb-md-8"
+          class="d-flex justify-content-between align-items-center border border-3 py-4 py-md-6 px-3 px-md-8"
+          data-aos="fade-up"
         >
           <h3 class="fs-5 fs-md-1">TICKET</h3>
           <h3 class="fs-7 fs-md-4 fw-bold">購票資訊</h3>
         </div>
-        <table class="table w-100 align-middle mb-12 mb-md-15">
+        <table
+          class="table w-100 align-middle mb-12 mb-md-15"
+          data-aos="fade-up"
+        >
           <thead>
             <tr>
               <th
                 scope="col"
-                class="details-ticket-date border-bottom border-3 px-0 px-lg-2"
+                class="details-ticket-date border-bottom border-3 px-0 px-lg-2 pt-4 pb-2 py-lg-4"
               >
                 活動日期
               </th>
               <th
                 scope="col"
-                class="details-ticket-type border-bottom border-3 px-0 px-lg-2"
+                class="details-ticket-type border-bottom border-3 px-0 pt-4 pb-2 py-lg-4"
               >
                 票種
               </th>
               <th
                 scope="col"
-                class="details-ticket-price border-bottom border-3 px-0 px-lg-2"
+                class="details-ticket-price border-bottom border-3 px-0 px-lg-2 pt-4 pb-2 py-lg-4"
               >
                 票價
               </th>
               <th
                 scope="col"
-                class="details-ticket-buy border-bottom border-3 px-0 px-lg-2"
+                class="details-ticket-buy border-bottom border-3 px-0 px-lg-2 pt-4 pb-2 py-lg-4"
               >
                 購票
               </th>
@@ -174,7 +192,7 @@
               <td class="px-0">
                 <a
                   href="##"
-                  class="details-ticket-buy-button btn btn-outline-primary border border-2 px-md-5"
+                  class="details-ticket-buy-button fs-9 fs-lg-7 text-nowrap t btn btn-outline-primary border border-2 px-md-5"
                   ><span class="d-none d-lg-inline-block tc-serif">立即</span
                   >購票</a
                 >
@@ -187,7 +205,7 @@
               <td class="px-0">
                 <a
                   href="##"
-                  class="details-ticket-buy-button btn btn-outline-primary border border-2 px-md-5"
+                  class="details-ticket-buy-button fs-9 fs-lg-7 text-nowrap t btn btn-outline-primary border border-2 px-md-5"
                   ><span class="d-none d-lg-inline-block tc-serif">立即</span
                   >購票</a
                 >
@@ -200,7 +218,7 @@
               <td class="px-0">
                 <a
                   href="##"
-                  class="details-ticket-buy-button btn btn-outline-primary border border-2 px-md-5"
+                  class="details-ticket-buy-button fs-9 fs-lg-7 text-nowrap btn btn-outline-primary border border-2 px-md-5"
                   ><span class="d-none d-lg-inline-block tc-serif">立即</span
                   >購票</a
                 >
@@ -215,5 +233,28 @@
 </footer>
 
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // 離底部距離 120px 才出現 建議 120-200 offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // 建議不要超過1秒 values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // false:往回拉會收回去 true:只出現一次 whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
